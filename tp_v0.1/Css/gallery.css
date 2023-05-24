@@ -7,25 +7,34 @@ div .gallery {
   }
   
   div.gallery img {
-    width: 100%;
-    height: auto;
+    
+    width: 400px;
+    height: 260px;
+    background-color: white;
+    overflow: hidden;
   }
   
   div.desc {
-    padding: 15px;
+    /* width: 390px; */
+    padding: 5px;
     text-align: center;
+    background-color: white;
+    overflow: hidden;
   }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .responsive {
-    padding: 0 6px;
+
+.responsive {
+    padding: 0;
     float: left;
     width: 24.99999%;
   }
-  
+
+.api {
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
   @media only screen and (max-width: 700px) {
     .responsive {
       width: 49.99999%;
@@ -44,4 +53,5 @@ div .gallery {
     display: table;
     clear: both;
   }
+  
   

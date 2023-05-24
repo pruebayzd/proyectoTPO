@@ -1,18 +1,165 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600&display=swap');
+
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
-    /* box-sizing: border-box; */
-    }
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+  }
 
 body {
     max-width: 1500px;
     margin: 0 auto;
-    
+    margin-bottom: 120px;
 }
 
+nav {
+    background: #4e54c8;
+    height: 90px;
+    width: 100%;
+}
+
+.enlace{
+    position: absolute;  
+    padding: 20px 50px;
+}
+
+.logo{
+    height: 40px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: aliceblue;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li a.active, li a:hover{
+    transition: .5s;
+    color:#6c3;
+    font-weight: 700;
+}
+
+.container {
+    margin:0px auto;
+    justify-content: center;
+    text-align:center
+}
+.tarjeta {
+    float: left;
+    border: 1px solid red;
+    margin:4px; padding: 2px;
+    width:300px;
+    height:210px;
+    overflow: hidden;
+}
+
+.checkbtn{
+    font-size: 20px;
+    color: aliceblue;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+footer {   
+    padding-top: 10px;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 1500px;
+    height: 120px;
+    color: white;
+    background-color: #4e54c8;
+}
+
+.verde {
+    color: #6c3;
+}
+
+.blanco {
+    color: white;
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+        .checkbtn{
+            display: block;
+        margin-top: 1.2em;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #1a7d6bd8;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 10;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    li a:hover, li a.active{
+        background: none;
+        color: #fff;
+    }
+
+    #check:checked ~ ul{
+        left:0; 
+    }
+}
+
+
+
+/* ******************************* */
+/* ******************************* */
 /* efecto de fondo de colores */
+/* ******************************* */
+/* ******************************* */
 .bg {
     animation:slide 7s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
@@ -159,110 +306,3 @@ body {
 /* +++++++++++++++++++++++++++++++++++++++++ */
 /*    FIN DE FONDO DE BURBUJAS CUADRADAS     */
 /* ***************************************** */
-
-
-
-    nav {
-        background: #1a7d6bd8;
-        height: 80px;
-        width: 100%;
-
-
-}
-
-.enlace{
-    position: absolute;  
-    padding: 20px 50px;
-}
-.logo{
-    height: 40px;
-}
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-nav ul li a{
-    color: aliceblue;
-    font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-li a.active, li a:hover{
-    transition: .5s;
-    color:black;
-    /* font-weight: 700; */
-}
-
-.checkbtn{
-    font-size: 20px;
-    color: aliceblue;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-
-}
-
-div .footer{
-    background: #1a7d6bd8;
-    height: 120px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-
-@media (max-width: 952px){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-
-}
-
-@media (max-width: 858px){
-   .checkbtn{
-    display: block;
-    margin-top: 1.2em;
-}
-ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #1a7d6bd8;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-    z-index: 10;
-}
-nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-
-}
-nav ul li a{
-    font-size: 20px;
-
-}
-li a:hover, li a.active{
-    background: none;
-    color: #fff;
-
-}
-#check:checked ~ ul{
-    left:0; 
-}
-}

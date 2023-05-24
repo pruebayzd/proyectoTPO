@@ -1,0 +1,100 @@
+<!-- IMPORTADOR DE HTML (INCLUDER) -->
+<script src="../js/inc.js"></script>
+
+<!-- HEAD -->
+<div HTMLinclude="./head.html"><script>includeHTML();</script></div>
+
+<body>
+<!-- background selector: DESCOMENTAR EL QUE QUIERAS USAR Y COMENTÁ EL QUE ESTÉ ACTIVO -->
+
+<!-- crazy background -->
+<!-- <div HTMLinclude="./bg_crazy.html"><script>includeHTML();</script></div> -->
+
+<!-- background de burbujas cuadradas -->
+<div HTMLinclude="./bg_bubbles.html"><script>includeHTML();</script></div>
+  <header class="header">
+   <nav>
+
+     <input type="checkbox" id="check">
+     <label for="check" class="checkbtn">
+       <i class="fa-solid fa-bars"></i>
+     </label>
+
+       <a href="./Inicio.html" class="enlace">
+       <img src="../Img/Los-peques4.png" alt="" class="logo">
+       </a>
+
+       <ul>
+         <li><a href="./Inicio.html">Inicio</a></li>
+         <li><a href="./escolar.html">Escolar</a></li>
+         <li><a href="./oficina.html">Oficina</a></li>
+         <li><a href="./arte.html">Arte</a></li>
+         <li><a class="active" href="./contacto.html">Contacto</a></li>   
+       </ul>
+
+   </nav>
+</header>
+
+
+  <style>
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  div  {
+    border-radius: 5px;
+    background-color: #FF8000;
+    /* padding: 20px; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  </style>
+  <div class="form">
+  <form  action="https://formsubmit.co/3f02f94851c25fc33dd0f96398677b0f" method="post"  enctype="multipart/form-data" target="_blank" >
+  <p><input type="text" name="nombre" placeholder="Nombre y Apellido" required/></p>
+  <p><input type="text" name="direccion" placeholder="Dirección y Lugar de origen" size="50" required/></p>
+  <p><input type="email" name="email" placeholder="Correo electrónico" size="50" required/></p>
+  <p><br/>
+  <p><input type="submit" value="Enviar"/>
+<input type="hidden" name="_replyto" />
+  <input type="hidden" name="_next" value="https://conferenciactes2022.com.ar/gracias-por-registrarte"/>
+  <input type="hidden" name="_captcha" value="false"/>
+</form>
+  </div>
+  
+    <!-- FOOTER  -->
+    <div HTMLinclude="./footer.html"><script>includeHTML();</script></div>
+
+  </body>
+</html>
+
