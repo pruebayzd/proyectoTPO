@@ -1,156 +1,137 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libreria Los Peques</title>
-    <link rel="stylesheet" type="text/Css" href="/css/inicio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type href="/css/gallery.css">
-</head>
+<!-- IMPORTADOR DE HTML (INCLUDER) -->
+<script src="../js/inc.js"></script>
 
-<body class="grid-container">
-    <header class="header">
-        <nav>
+<!-- HEAD -->
+<div HTMLinclude="./head.html"><script>includeHTML();</script></div>
 
-          <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-          </label>
+<body>
+<!-- background selector: DESCOMENTAR EL QUE QUIERAS USAR Y COMENTÁ EL QUE ESTÉ ACTIVO -->
 
-            <a href="a" class="enlace">
-            <img src="/img/Los-peques4.png" alt="logo de la empresa" class="logo">
+<!-- crazy background -->
+<div HTMLinclude="./bg_crazy.html"><script>includeHTML();</script></div>
+
+<!-- background de burbujas cuadradas -->
+<!-- <div HTMLinclude="./bg_bubbles.html"><script>includeHTML();</script></div> -->
+ 
+  <header class="header">
+   <nav>
+
+     <input type="checkbox" id="check">
+     <label for="check" class="checkbtn">
+       <i class="fa-solid fa-bars"></i>
+     </label>
+
+       <a href="./Inicio.html" class="enlace">
+       <img src="../img/Los-peques4.png" alt="" class="logo">
+       </a>
+
+       <ul>
+        <li><a href="./Inicio.html">Inicio</a></li>
+        <li><a href="./escolar.html">Escolar</a></li>
+        <li><a href="./oficina.html">Oficina</a></li>
+        <li><a class="active" href="./arte.html">Arte</a></li>
+        <li><a href="./api.html">API</a></li>
+       <li><a href="./contacto.html">Contacto</a></li>   
+      </ul>
+
+   </nav>
+</header>
+
+<section>
+
+  <main>
+      <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="../img/pinceles.png">
+              <img src="../img/pinceles.png" alt="Pinceles chato" width="600" height="400">
             </a>
-
-            <ul>
-              <li><a class="active" href="Inicio.html">Inicio</a></li>
-              <li><a href="escolar.html">Escolar</a></li>
-              <li><a href="oficina.html">Ofina</a></li>
-              <li><a href="arte.html">Arte</a></li>
-              <li><a href="contacto.html">Contacto</a></li>   
-            </ul>
-
-        </nav>
-    </header>
-
-    <main>
+            <div class="desc">pinceles chatos sintetico setx7 rectos</div>
+          </div>
+        </div>
+        
+        
         <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="/img/pinceles.png">
-                <img src="/Img/pinceles.png" alt="Pinceles chato" width="600" height="400">
-              </a>
-              <div class="desc">pinceles chatos sintetico setx7 rectos</div>
-            </div>
+          <div class="gallery">
+            <a target="_blank" href="../img/piceles de esponja.png">
+              <img src="../img/pinceles de esponja.png" alt="Pinceles de Espuma" width="600" height="400">
+            </a>
+            <div class="desc">pinceles redondeado de espuma setx3</div>
           </div>
-          
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="/Img/piceles de esponja.png">
-                <img src="/Img/pinceles de esponja.png" alt="Pinceles de Espuma" width="600" height="400">
-              </a>
-              <div class="desc">pinceles redondeado de espuma setx3</div>
-            </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="../img/pintura a la tiza 2.png">
+              <img src="../img/pintura a la tiza 2.png" alt="Pintura de Tiza" width="600" height="400">
+            </a>
+            <div class="desc">Pintura de Tiza color pastel lavanda 210cc</div>
           </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="/Img/pintura a la tiza 2.png">
-                <img src="/Img/pintura a la tiza 2.png" alt="Pintura de Tiza" width="600" height="400">
-              </a>
-              <div class="desc">Pintura de Tiza color pastel lavanda 210cc</div>
-            </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="../img/pintura a la tiza1.png">
+              <img src="../img/pintura a la tiza1.png" alt="Pintura de tiza" width="600" height="400">
+            </a>
+            <div class="desc">Pintura de Tiza color patel blue 210cc</div>
           </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="/Img/pintura a la tiza1.png">
-                <img src="/Img/pintura a la tiza1.png" alt="Pintura de tiza" width="600" height="400">
-              </a>
-              <div class="desc">Pintura de Tiza color patel blue 210cc</div>
-            </div>
-          </div>
-          
-          <div class="clearfix"></div>
-          
-          <div style="padding:6px;">
-           
-          </div>
-           
-<div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="/Img/papel para acuarela 25x35.png">
-        <img src="/Img/papel para acuarela 25x35.png" alt="Papel para acuarela" width="600" height="400">
-      </a>
-      <div class="desc">Papel para pintar con acuarela de 25x35</div>
-    </div>
+        </div>
+        
+        <div class="clearfix"></div>
+        
+        <div style="padding:6px;">
+         
+        </div>
+         
+  <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../img/papel para acuarela 25x35.png">
+      <img src="../img/papel para acuarela 25x35.png" alt="Papel para acuarela" width="600" height="400">
+    </a>
+    <div class="desc">Papel para pintar con acuarela de 25x35</div>
+  </div>
   </div>
   
   
   <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="/Img/Barniz.png">
-        <img src="/Img/Barniz.png" alt="Barniz" width="600" height="400">
-      </a>
-      <div class="desc">Barniz brillante x125ml</div>
-    </div>
+  <div class="gallery">
+    <a target="_blank" href="../img/Barniz.png">
+      <img src="../img/Barniz.png" alt="Barniz" width="600" height="400">
+    </a>
+    <div class="desc">Barniz brillante x125ml</div>
+  </div>
   </div>
   
   <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="/Img/acrilicos.png">
-        <img src="/Img/acrilicos.png" alt="acrilicos" width="600" height="400">
-      </a>
-      <div class="desc">Acrilicos pack x12 50ml</div>
-    </div>
+  <div class="gallery">
+    <a target="_blank" href="../img/acrilicos.png">
+      <img src="../img/acrilicos.png" alt="acrilicos" width="600" height="400">
+    </a>
+    <div class="desc">Acrilicos pack x12 50ml</div>
+  </div>
   </div>
   
   <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="/Img/Bastidor.png">
-        <img src="/Img/Bastidor.png" alt="Bastidor" width="600" height="400">
-      </a>
-      <div class="desc">Bastidor Entelado 20x20 100% algodón</div>
-    </div>
+  <div class="gallery">
+    <a target="_blank" href="../img/Bastidor.png">
+      <img src="../img/Bastidor.png" alt="Bastidor" width="600" height="400">
+    </a>
+    <div class="desc">Bastidor Entelado 20x20 100% algodón</div>
   </div>
-  
+  </div>
   <div class="clearfix"></div>
   
   <div style="padding:6px;">
-    
+  
   </div>
+  
+  </main>
+    
 
-    </main>
+</section>
 
-    <div>
-        <footer>
-          <a href="https://www.facebook.com/profile.php?id=100069567007108" >  
-          <img src="/img/faceb.png" alt="" class="redes">
-        </a>
-        <a href=" https://www.instagram.com/invites/contact/?i=1v1k317vxpbfq&utm_content=o4jkhjb ">
-          <img src="/img/instag.png" alt="" class="redes">
-        </a>
-        <a href="">
-          <img edes" src="/img/whats.png" alt="" class="redes">
-        </a>
-          <br>
-          <a href="#">Aviso legal</a>
-          <a href="#">Política de privacidad</a>
-          <a href="#">Términos y condiciones</a>
-          
-          <p>Copyright 2023.Los Peques
-      
-          Mapa de sitio.
-          Información de contacto.
-         
-          Formulario de registro por correo electrónico.</p>
-      
-      </footer>
-    </div>
+    <!-- FOOTER  -->
+    <div HTMLinclude="./footer.html"><script>includeHTML();</script></div>
 
-</body>
-
-
-
-
+  </body>
+</html>

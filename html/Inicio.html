@@ -1,71 +1,98 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Los Peques</title>
-    <link rel="stylesheet" href="/css/inicio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/estilosA.css">
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+<!-- IMPORTADOR DE HTML (INCLUDER) -->
+<script src="../js/inc.js"></script>
 
-</head>
-<body class="grid-container">
-    <header class="header">
-        <nav>
+<!-- HEAD -->
+<div HTMLinclude="./head.html"><script>includeHTML();</script></div>
 
-          <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-          </label>
+<body>
 
-            <a href="a" class="enlace">
-            <img src="/img/Los-peques4.png" alt="Logo de la empresa" class="logo">
-            </a>
+<!-- background selector: DESCOMENTAR EL QUE QUIERAS USAR Y COMENTÁ EL QUE ESTÉ ACTIVO -->
 
-            <ul>
-              <li><a class="active" href="Inicio.html">Inicio</a></li>
-              <li><a href="escolar.html">Escolar</a></li>
-              <li><a href="oficina.html">Ofina</a></li>
-              <li><a href="arte.html">Arte</a></li>
-              <li><a href="contacto.html">Contacto</a></li>   
-            </ul>
+<!-- crazy background -->
+<div HTMLinclude="./bg_crazy.html"><script>includeHTML();</script></div>
 
-        </nav>
-    </header>
+<!-- background de burbujas cuadradas -->
+<!-- <div HTMLinclude="./bg_bubbles.html"><script>includeHTML();</script></div> -->
 
- <div>
-  <main class="main">
-    <article class="block">
-      <div class="container-all">
-        <input type="radio" id="1" name="image-slide" hidden/>
-        <input type="radio" id="2" name="image-slide" hidden/>
-        <input type="radio" id="3" name="image-slide" hidden/>
-        
-        <div class="slide">
-        <div class="item-slide">
-            <img src="/img/carr1.jpg" width="860" height="608"></div>
-        <div class="item-slide"> 
-            <img src="/img/carr2.jpg" width="860" height="608"></div>
-        <div class="item-slide">
-            <img src="/img/carr3.jpg" width="860" height="608"></div>
-        
-    </div>
-    <div class="pagination">
-        <label for="1" class="pagination-item"><img src="img/carr1.jpg"></label>
-        <label for="2" class="pagination-item"><img src="img/carr2.jpg"></label>
-        <label for="3" class="pagination-item"><img src="img/carr3.jpg"></label>
-    </div>
-</div>
 
-  </article>
-</main>
-</div> 
-<div>
-  <footer>
-    <img src="img/faviconface-32x32.png">
-  </footer>
-</div>
-</body>
+
+  <header class="header">
+   <nav>
+
+     <input type="checkbox" id="check">
+     <label for="check" class="checkbtn">
+       <i class="fas fa-bars"></i>
+     </label>
+
+       <a href="./Inicio.html" class="enlace">
+       <img src="../img/Los-peques4.png" alt="Los Peques" class="logo">
+       </a>
+
+       <ul>
+         <li><a class="active" href="./Inicio.html">Inicio</a></li>
+         <li><a href="./escolar.html">Escolar</a></li>
+         <li><a href="./oficina.html">Oficina</a></li>
+         <li><a href="./arte.html">Arte</a></li>
+         <li><a href="./api.html">API</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>   
+       </ul>
+
+   </nav>
+</header>
+
+    <!-- MAIN -->
+    <section>
+      <main class="main">
+        <article class="block">
+          <div class="container-all">
+            <input type="radio" id="1" name="image-slide" hidden />
+            <input type="radio" id="2" name="image-slide" hidden />
+            <input type="radio" id="3" name="image-slide" hidden />
+            <input type="radio" id="4" name="image-slide" hidden />
+            <input type="radio" id="5" name="image-slide" hidden />
+            
+            <div class="slide">
+              <div class="item-slide">
+                <img src="../img/carr3.jpg" width="860" height="608" alt="Imagen de Carrusel Número 3" />
+              </div>
+              <div class="item-slide">
+                <img src="../img/carr1.jpg" width="860" height="608" alt="Imagen de Carrusel Número 1" />
+              </div>
+              <div class="item-slide">
+                <img src="../img/carr2.jpg" width="860" height="608" alt="Imagen de Carrusel Número 2" />
+              </div>
+              <div class="item-slide">
+                <img src="../img/carr3.jpg" width="860" height="608" alt="Imagen de Carrusel Número 3" />
+              </div>
+              <div class="item-slide">
+                <img src="../img/carr1.jpg" width="860" height="608" alt="Imagen de Carrusel Número 1" />
+              </div>
+            </div>
+            <div class="pagination">
+              <label for="1" class="pagination-item"
+                ><img src="../img/carr3.jpg" alt="Miniatura de Carrusel Número 1" />
+              </label>
+              <label for="2" class="pagination-item"
+                ><img src="../img/carr1.jpg" alt="Miniatura de Carrusel Número 2" />
+              </label>
+              <label for="3" class="pagination-item"
+                ><img src="../img/carr2.jpg" alt="Miniatura de Carrusel Número 3" />
+              </label>
+              <label for="4" class="pagination-item"
+                ><img src="../img/carr3.jpg" alt="Miniatura de Carrusel Número 4" />
+              </label>
+              <label for="5" class="pagination-item"
+                ><img src="../img/carr3.jpg" alt="Miniatura de Carrusel Número 5" />
+              </label>
+            </div>
+          </div>
+        </article>
+      </main>
+    </section>
+      
+    <!-- FOOTER  -->
+    <div HTMLinclude="./footer.html"><script>includeHTML();</script></div>
+
+  </body>
 </html>
+

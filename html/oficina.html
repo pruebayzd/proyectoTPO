@@ -1,146 +1,139 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libreria Los Peques</title>
-    <link rel="stylesheet" type="text/css" href="/css/inicio.css"
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/gallery.css">
-</head>
+<!-- IMPORTADOR DE HTML (INCLUDER) -->
+<script src="../js/inc.js"></script>
 
-<body class="grid-container">
-    <header class="header">
-        <nav>
+<!-- HEAD -->
+<div HTMLinclude="./head.html"><script>includeHTML();</script></div>
 
-          <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-          </label>
+<body>
+<!-- background selector: DESCOMENTAR EL QUE QUIERAS USAR Y COMENTÁ EL QUE ESTÉ ACTIVO -->
 
-            <a href="a" class="enlace">
-            <img src="/img/Los-peques4.png" alt="" class="logo">
+<!-- crazy background -->
+<div HTMLinclude="./bg_crazy.html"><script>includeHTML();</script></div>
+
+<!-- background de burbujas cuadradas -->
+<!-- <div HTMLinclude="./bg_bubbles.html"><script>includeHTML();</script></div> -->
+
+
+  <header class="header">
+   <nav>
+
+     <input type="checkbox" id="check">
+     <label for="check" class="checkbtn">
+       <i class="fa-solid fa-bars"></i>
+     </label>
+
+       <a href="./Inicio.html" class="enlace">
+       <img src="../img/Los-peques4.png" alt="" class="logo">
+       </a>
+
+       <ul>
+        <li><a href="./Inicio.html">Inicio</a></li>
+        <li><a href="./escolar.html">Escolar</a></li>
+        <li><a class="active" href="./oficina.html">Oficina</a></li>
+        <li><a href="./arte.html">Arte</a></li>
+        <li><a href="./api.html">API</a></li>
+       <li><a href="./contacto.html">Contacto</a></li>   
+      </ul>
+
+   </nav>
+</header>
+
+<section>
+
+  <main>
+      <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="../img/bibliorato x5.png">
+              <img src="../img/bibliorato x5.png" alt="Biblioratos colores pastel" width="600" height="400">
             </a>
-
-            <ul>
-              <li><a class="active" href="Inicio.html">Inicio</a></li>
-              <li><a href="escolar.html">Escolar</a></li>
-              <li><a href="oficina.html">Ofina</a></li>
-              <li><a href="arte.html">Arte</a></li>
-              <li><a href="contacto.html">Contacto</a></li>   
-            </ul>
-
-        </nav>
-    </header>
-
-    <main>
+            <div class="desc">Bibliorato de colores pastel x5</div>
+          </div>
+        </div>
+        
+        
         <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="/img/bibliorato x5.png">
-                <img src="/img/bibliorato x5.png" alt="Biblioratos colores pastel" width="600" height="400">
-              </a>
-              <div class="desc">Bibliorato de colores pastel x5</div>
-            </div>
+          <div class="gallery">
+            <a target="_blank" href="../img/Bibliorato gris.png">
+              <img src="../img/Bibliorato gris.png" alt="Bibliorato gris" width="600" height="400">
+            </a>
+            <div class="desc">Bibliorato gris tamaño oficio</div>
           </div>
-          
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="/img/Bibliorato gris.png">
-                <img src="/img/Bibliorato gris.png" alt="Bibliorato gris" width="600" height="400">
-              </a>
-              <div class="desc">Bibliorato gris tamaño oficio</div>
-            </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="../img/Caja de archivo.png">
+              <img src="../img/Caja de archivo.png" alt="caja de archivo " width="600" height="400">
+            </a>
+            <div class="desc">Caja de Archivo Plastica tamaño oficio color azul</div>
           </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="/img/Caja de archivo.png">
-                <img src="/img/Caja de archivo.png" alt="caja de archivo " width="600" height="400">
-              </a>
-              <div class="desc">Caja de Archivo Plastica tamaño oficio color azul</div>
-            </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="../img/Bandeja organizadora.png">
+              <img src="../img/Bandeja organizadora.png" alt="Bandeja organizador" width="600" height="400">
+            </a>
+            <div class="desc">Bandeja organizador plastico 3 piso</div>
           </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="/img/Bandeja organizadora.png">
-                <img src="/img/Bandeja organizadora.png" alt="Bandeja organizador" width="600" height="400">
-              </a>
-              <div class="desc">Bandeja organizador plastico 3 piso</div>
-            </div>
-          </div>
-          
-          <div class="clearfix"></div>
-          
-          <div style="padding:6px;">
-           
-          </div>
-           
-<div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="/img/carpeta colgante.png">
-        <img src="/img/carpeta colgante.png" alt="Carpeta colgante" width="600" height="400">
-      </a>
-      <div class="desc">Carpeta colgante tamaño oficio</div>
-    </div>
-  </div>
-  
-  
-  <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="/img/clasificador archivador.png">
-        <img src="/img/clasificador archivador.png" alt="clasificador archivador" width="600" height="400">
-      </a>
-      <div class="desc">Clasificador Archivador c/ Fuelle Bandoneon A4</div>
-    </div>
-  </div>
-  
-  <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="/img/Resma de papel.png">
-        <img src="/img/Resma de papel.png" alt="Resma de papel" width="600" height="400">
-      </a>
-      <div class="desc">Resma de Papel 75g A4 </div>
-    </div>
-  </div>
-  
-  <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="/img/Set abrochadora broches sacabroches.png">
-        <img src="/img/Set abrochadora broches sacabroches.png" alt="Set abrochadora broches sacabroches" width="600" height="400">
-      </a>
-      <div class="desc">Set x3 Abrochadora Broches Sacabroches</div>
-    </div>
-  </div>
-  
-  <div class="clearfix"></div>
-  
-  <div style="padding:6px;">
-    
-  </div>
-
-    </main>
-
-    <div>
-        <footer>
-          <img src="img/faceb.png" alt="" class="redes">
-          <img src="img/instag (1).png" alt="" class="redes">
-          <img edes" src="img/whats.png" alt="" class="redes">
-            <br>
-          <a href="#">Aviso legal</a>
-          <a href="#">Política de privacidad</a>
-          <a href="#">Términos y condiciones</a>
-          
-          <p>Copyright 2023.Los Peques
-      
-          Mapa de sitio.
-          Información de contacto.
+        </div>
+        
+        <div class="clearfix"></div>
+        
+        <div style="padding:6px;">
          
-          Formulario de registro por correo electrónico.</p>
-      
-      </footer>
-    </div>
+        </div>
+         
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../img/carpeta colgante.png">
+      <img src="../img/carpeta colgante.png" alt="Carpeta colgante" width="600" height="400">
+    </a>
+    <div class="desc">Carpeta colgante tamaño oficio</div>
+  </div>
+</div>
 
-</body>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../img/clasificador archivador.png">
+      <img src="../img/clasificador archivador.png" alt="clasificador archivador" width="600" height="400">
+    </a>
+    <div class="desc">Clasificador Archivador c/ Fuelle Bandoneon A4</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../img/Resma de papel.png">
+      <img src="../img/Resma de papel.png" alt="Resma de papel" width="600" height="400">
+    </a>
+    <div class="desc">Resma de Papel 75g A4 </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../img/Set abrochadora broches sacabroches.png">
+      <img src="../img/Set abrochadora broches sacabroches.png" alt="Set abrochadora broches sacabroches" width="600" height="400">
+    </a>
+    <div class="desc">Set x3 Abrochadora Broches Sacabroches</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  
+</div>
+
+  </main>
+
+</section>
+
+          
+    <!-- FOOTER  -->
+    <div HTMLinclude="./footer.html"><script>includeHTML();</script></div>
+
+  </body>
+</html>
