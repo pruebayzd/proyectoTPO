@@ -83,9 +83,9 @@ li a.active {
 section {
     position:relative;
     background-color: white;
-    height: calc(100vh - 80px);
+    height: calc(100vh);
     /* padding-bottom: 120px; */
-    /* margin-bottom: 120px; */
+    margin-bottom: 150px;
 }
 
 .contact {

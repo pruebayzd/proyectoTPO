@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libreria Los Peques</title>
-    <link rel="icon" type="image/vnd.ico" href="../img/favicon-32x32.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Estilos generales -->
-    <link rel="stylesheet" type="text/css" href="../css/inicio.css">
-    <!-- Paginador -->
-    <link rel="stylesheet" href="../css/grid.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <!-- IMPORTADOR DE HTML (INCLUDER) -->
-    <script src="../js/inc.js"></script>
-	
-</head>
+<!-- IMPORTADOR DE HTML (INCLUDER) -->
+<script src="../js/inc.js"></script>
 
-
-
+<!-- HEAD -->
+<div HTMLinclude="./head.html"><script>includeHTML();</script></div>
 
 <body>
 
@@ -68,7 +51,7 @@
         </div>
         
     
-        <div id="grid_container" >
+        <div id="contenido" >
             <!-- Aquí insertaremos contenido que recuperamos mediante la API -->
         </div>
     
@@ -78,15 +61,15 @@
                 fetch('https://fakestoreapi.com/products/'+id.toString()) 
                     .then(res => res.json())
                     .then(res => {
-                        grid_container.innerHTML +=
+                        contenido.innerHTML +=
                             `<div class="responsive">
-                                <div class="item">
+                                <div class="gallery">
                                     <a target="_blank" href="${res.image}">
                                     <img src="${res.image}" alt="Imagen de api ${id.toString()}">
                                     </a>
                                     <div class="desc">${res.category}</div>
                                 </div>
-                            </div>`
+                                </div>`
                         })
                     id+=1;
                 }
